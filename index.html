@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="/images/favicon-32x32.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="/css/styles.css" />
+		<title>Survey Form</title>
+	</head>
+	<body>
+		<h1 id="title">Beverage Survey Form</h1>
+		<p id="description">Thank you for taking the time to help us improve the platform</p>
+		<form action="" id="survey-form">
+			<fieldset class="basic-info">
+				<label for="name" id="name-label"
+					>Name:
+					<div>
+						<input
+							type="text"
+							name="name-field"
+							id="name"
+							required
+							placeholder="Enter your name here"
+						/>
+					</div>
+				</label>
+				<label for="email" id="email-label"
+					>E-mail:
+					<div>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							required
+							placeholder="Enter your E-mail here"
+						/>
+					</div>
+				</label>
+				<label for="number" id="number-label"
+					>Number:
+					<div>
+						<input
+							type="number"
+							name="number"
+							id="number"
+							min="1111111111"
+							max="99999999999"
+							placeholder="Enter your number here"
+						/>
+					</div>
+				</label>
+			</fieldset>
+			<fieldset class="dropdown">
+				<label for="dropdown"
+					>Please select the type of beverage you prefer:
+					<div>
+						<select name="dropdown-menu" id="dropdown">
+							<option value="0">Please select one:</option>
+							<option value="1">Alcoholic</option>
+							<option value="2">Non-Alcoholic</option>
+						</select>
+					</div>
+				</label>
+			</fieldset>
+			<fieldset class="radio-buttons">
+				<label for="radio">
+					Which temperature best suits you in the morning?
+					<div>
+						<input type="radio" name="radio" id="radio" value="Hot" />
+						<label for="radio">Hot </label>
+					</div>
+					<div>
+						<input type="radio" name="radio" id="radio" value="Cold" />
+						<label for="radio">Cold </label>
+					</div>
+					<div>
+						<input type="radio" name="radio" id="radio" value="Lukewarm" />
+						<label for="radio">Lukewarm </label>
+					</div>
+				</label>
+			</fieldset>
+			<fieldset class="checkboxes">
+				<label for="checkbox">
+					Which of the following type of the drinks you would like to see more
+					of? <br> <span class="subtext">(You can select multiple)</span>
+					<div>
+						<input type="checkbox" name="soda" id="soda" value="soda" />
+						<label for="soda">Carbonated drinks </label>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="organic"
+							id="organic"
+							value="organic"
+						/>
+						<label for="organic">Organic Drinks </label>
+					</div>
+					<div>
+						<input type="checkbox" name="juice" id="juice" value="juice" />
+						<label for="juice">Fruit Juice </label>
+					</div>
+					<div>
+						<input type="checkbox" name="energy" id="energy" value="energy" />
+						<label for="energy">Energy Drinks </label>
+					</div>
+					<div>
+						<input
+							type="checkbox"
+							name="premade"
+							id="premade"
+							value="premade"
+						/>
+						<label for="premade">Premade Teas </label>
+					</div>
+				</label>
+			</fieldset>
+			<fieldset class="|">
+				<textarea
+					name="comment-box"
+					id="comments"
+					cols="30"
+					rows="4"
+					placeholder="Please let us know if you have suggestions..."
+				></textarea>
+				<button type="submit" id="submit">Submit</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
