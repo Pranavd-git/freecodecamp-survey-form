@@ -71,7 +71,7 @@ h6 {
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,300&family=Space+Grotesk:wght@300;600&display=swap");
 body {
       align-items: center;
-      background-image: url(images/Orange-Coral.png);
+      background-image: url(/images/Orange-Coral.png);
       display: flex;
       flex-direction: column;
     }
