@@ -132,6 +132,11 @@ button {
       padding: 0.5rem;
       width: 100%;
     }
+
+button:hover {
+  background: #2d9555;
+  cursor: pointer;
+}
 label {
       color: white;
     }
